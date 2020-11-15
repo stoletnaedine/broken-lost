@@ -60,6 +60,8 @@
 		C37C609925612659009A93EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C3FB274025611F0C00D8611E /* Info.plist */,
+				C3FB273D25611F0C00D8611E /* LaunchScreen.storyboard */,
 				C37C609E25612712009A93EA /* Localizable.strings */,
 				C3FB273B25611F0C00D8611E /* Assets.xcassets */,
 			);
@@ -92,8 +94,6 @@
 				C3FB274B2561206D00D8611E /* RootManager.swift */,
 				C37C609925612659009A93EA /* Resources */,
 				C3FB274825611FE000D8611E /* Screens */,
-				C3FB273D25611F0C00D8611E /* LaunchScreen.storyboard */,
-				C3FB274025611F0C00D8611E /* Info.plist */,
 			);
 			path = BrokenLost;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RF6BSH4ZX;
-				INFOPLIST_FILE = BrokenLost/Info.plist;
+				INFOPLIST_FILE = BrokenLost/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RF6BSH4ZX;
-				INFOPLIST_FILE = BrokenLost/Info.plist;
+				INFOPLIST_FILE = BrokenLost/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

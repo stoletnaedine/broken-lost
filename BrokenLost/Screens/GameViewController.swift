@@ -14,7 +14,6 @@ class GameViewController: UIViewController {
         
         print("start game")
         
-        print(R.string.localizable.test)
     }
 
 
