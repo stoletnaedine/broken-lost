@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA6BE54F314FBF6C35F2CB93 /* Pods_Broken_Lost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364DF7E54F866F3078FCC0E0 /* Pods_Broken_Lost.framework */; };
-		C37C609B2561267B009A93EA /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = C37C609A2561267B009A93EA /* swiftgen.yml */; };
 		C37C609F25612712009A93EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C37C609E25612712009A93EA /* Localizable.strings */; };
+		C37C620B25613595009A93EA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C620A25613595009A93EA /* R.generated.swift */; };
 		C3FB273325611F0B00D8611E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB273225611F0B00D8611E /* AppDelegate.swift */; };
 		C3FB273725611F0B00D8611E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB273625611F0B00D8611E /* GameViewController.swift */; };
 		C3FB273C25611F0C00D8611E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FB273B25611F0C00D8611E /* Assets.xcassets */; };
@@ -18,18 +17,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		364DF7E54F866F3078FCC0E0 /* Pods_Broken_Lost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Broken_Lost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DA8C2C904CB84C05C286D51 /* Pods-Broken Lost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broken Lost.debug.xcconfig"; path = "Target Support Files/Pods-Broken Lost/Pods-Broken Lost.debug.xcconfig"; sourceTree = "<group>"; };
-		8F80AE1BC2AD7103D92E26B4 /* Pods-Broken Lost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broken Lost.release.xcconfig"; path = "Target Support Files/Pods-Broken Lost/Pods-Broken Lost.release.xcconfig"; sourceTree = "<group>"; };
-		C37C609A2561267B009A93EA /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		4E0063DC099420125C9C0F5C /* Pods-BrokenLost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenLost.debug.xcconfig"; path = "Target Support Files/Pods-BrokenLost/Pods-BrokenLost.debug.xcconfig"; sourceTree = "<group>"; };
 		C37C609E25612712009A93EA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		C3FB272F25611F0B00D8611E /* Broken Lost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Broken Lost.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37C620A25613595009A93EA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C3FB272F25611F0B00D8611E /* BrokenLost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrokenLost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FB273225611F0B00D8611E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3FB273625611F0B00D8611E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C3FB273B25611F0C00D8611E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3FB273E25611F0C00D8611E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3FB274025611F0C00D8611E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FB274B2561206D00D8611E /* RootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
+		EDEE16B223A229513049B587 /* Pods-BrokenLost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenLost.release.xcconfig"; path = "Target Support Files/Pods-BrokenLost/Pods-BrokenLost.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA6BE54F314FBF6C35F2CB93 /* Pods_Broken_Lost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +44,6 @@
 		0741B2A1317F0845AE2EA035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				364DF7E54F866F3078FCC0E0 /* Pods_Broken_Lost.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -55,8 +51,8 @@
 		82A688A5ED422849ACD699C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7DA8C2C904CB84C05C286D51 /* Pods-Broken Lost.debug.xcconfig */,
-				8F80AE1BC2AD7103D92E26B4 /* Pods-Broken Lost.release.xcconfig */,
+				4E0063DC099420125C9C0F5C /* Pods-BrokenLost.debug.xcconfig */,
+				EDEE16B223A229513049B587 /* Pods-BrokenLost.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -64,7 +60,6 @@
 		C37C609925612659009A93EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C37C609A2561267B009A93EA /* swiftgen.yml */,
 				C37C609E25612712009A93EA /* Localizable.strings */,
 				C3FB273B25611F0C00D8611E /* Assets.xcassets */,
 			);
@@ -74,7 +69,8 @@
 		C3FB272625611F0B00D8611E = {
 			isa = PBXGroup;
 			children = (
-				C3FB273125611F0B00D8611E /* Broken Lost */,
+				C37C620A25613595009A93EA /* R.generated.swift */,
+				C3FB273125611F0B00D8611E /* BrokenLost */,
 				C3FB273025611F0B00D8611E /* Products */,
 				82A688A5ED422849ACD699C8 /* Pods */,
 				0741B2A1317F0845AE2EA035 /* Frameworks */,
@@ -84,22 +80,22 @@
 		C3FB273025611F0B00D8611E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3FB272F25611F0B00D8611E /* Broken Lost.app */,
+				C3FB272F25611F0B00D8611E /* BrokenLost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3FB273125611F0B00D8611E /* Broken Lost */ = {
+		C3FB273125611F0B00D8611E /* BrokenLost */ = {
 			isa = PBXGroup;
 			children = (
-				C37C609925612659009A93EA /* Resources */,
 				C3FB273225611F0B00D8611E /* AppDelegate.swift */,
 				C3FB274B2561206D00D8611E /* RootManager.swift */,
+				C37C609925612659009A93EA /* Resources */,
 				C3FB274825611FE000D8611E /* Screens */,
 				C3FB273D25611F0C00D8611E /* LaunchScreen.storyboard */,
 				C3FB274025611F0C00D8611E /* Info.plist */,
 			);
-			path = "Broken Lost";
+			path = BrokenLost;
 			sourceTree = "<group>";
 		};
 		C3FB274825611FE000D8611E /* Screens */ = {
@@ -113,11 +109,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3FB272E25611F0B00D8611E /* Broken Lost */ = {
+		C3FB272E25611F0B00D8611E /* BrokenLost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3FB274325611F0C00D8611E /* Build configuration list for PBXNativeTarget "Broken Lost" */;
+			buildConfigurationList = C3FB274325611F0C00D8611E /* Build configuration list for PBXNativeTarget "BrokenLost" */;
 			buildPhases = (
 				CDA20B9751B79B47A9EAC142 /* [CP] Check Pods Manifest.lock */,
+				C37C61D725613459009A93EA /* R.swift */,
 				C3FB272B25611F0B00D8611E /* Sources */,
 				C3FB272C25611F0B00D8611E /* Frameworks */,
 				C3FB272D25611F0B00D8611E /* Resources */,
@@ -127,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = "Broken Lost";
+			name = BrokenLost;
 			productName = "Broken Lost";
-			productReference = C3FB272F25611F0B00D8611E /* Broken Lost.app */;
+			productReference = C3FB272F25611F0B00D8611E /* BrokenLost.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C3FB272A25611F0B00D8611E /* Build configuration list for PBXProject "Broken Lost" */;
+			buildConfigurationList = C3FB272A25611F0B00D8611E /* Build configuration list for PBXProject "BrokenLost" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3FB272E25611F0B00D8611E /* Broken Lost */,
+				C3FB272E25611F0B00D8611E /* BrokenLost */,
 			);
 		};
 /* End PBXProject section */
@@ -172,28 +169,47 @@
 				C37C609F25612712009A93EA /* Localizable.strings in Resources */,
 				C3FB273F25611F0C00D8611E /* LaunchScreen.storyboard in Resources */,
 				C3FB273C25611F0C00D8611E /* Assets.xcassets in Resources */,
-				C37C609B2561267B009A93EA /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C37C61D725613459009A93EA /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		C8CE3B8E94F07169B1DCC042 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Broken Lost/Pods-Broken Lost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BrokenLost/Pods-BrokenLost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Broken Lost/Pods-Broken Lost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BrokenLost/Pods-BrokenLost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Broken Lost/Pods-Broken Lost-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrokenLost/Pods-BrokenLost-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDA20B9751B79B47A9EAC142 /* [CP] Check Pods Manifest.lock */ = {
@@ -211,7 +227,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Broken Lost-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrokenLost-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -228,6 +244,7 @@
 				C3FB273725611F0B00D8611E /* GameViewController.swift in Sources */,
 				C3FB273325611F0B00D8611E /* AppDelegate.swift in Sources */,
 				C3FB274C2561206D00D8611E /* RootManager.swift in Sources */,
+				C37C620B25613595009A93EA /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,13 +380,13 @@
 		};
 		C3FB274425611F0C00D8611E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DA8C2C904CB84C05C286D51 /* Pods-Broken Lost.debug.xcconfig */;
+			baseConfigurationReference = 4E0063DC099420125C9C0F5C /* Pods-BrokenLost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RF6BSH4ZX;
-				INFOPLIST_FILE = "Broken Lost/Info.plist";
+				INFOPLIST_FILE = BrokenLost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -384,13 +401,13 @@
 		};
 		C3FB274525611F0C00D8611E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F80AE1BC2AD7103D92E26B4 /* Pods-Broken Lost.release.xcconfig */;
+			baseConfigurationReference = EDEE16B223A229513049B587 /* Pods-BrokenLost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RF6BSH4ZX;
-				INFOPLIST_FILE = "Broken Lost/Info.plist";
+				INFOPLIST_FILE = BrokenLost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,7 +423,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3FB272A25611F0B00D8611E /* Build configuration list for PBXProject "Broken Lost" */ = {
+		C3FB272A25611F0B00D8611E /* Build configuration list for PBXProject "BrokenLost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3FB274125611F0C00D8611E /* Debug */,
@@ -415,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3FB274325611F0C00D8611E /* Build configuration list for PBXNativeTarget "Broken Lost" */ = {
+		C3FB274325611F0C00D8611E /* Build configuration list for PBXNativeTarget "BrokenLost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3FB274425611F0C00D8611E /* Debug */,

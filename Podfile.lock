@@ -63,14 +63,16 @@ PODS:
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
   - ReachabilitySwift (5.0.0)
-  - SwiftGen (6.4.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - lottie-ios
+  - R.swift
   - ReachabilitySwift
-  - SwiftGen
 
 SPEC REPOS:
   trunk:
@@ -85,8 +87,9 @@ SPEC REPOS:
     - lottie-ios
     - nanopb
     - PromisesObjC
+    - R.swift
+    - R.swift.Library
     - ReachabilitySwift
-    - SwiftGen
 
 SPEC CHECKSUMS:
   Firebase: 50be68416f50eb4eb2ecb0e78acab9a051ef95df
@@ -100,9 +103,10 @@ SPEC CHECKSUMS:
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
-  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
 
-PODFILE CHECKSUM: 3974ee32cb7c71618c7320654fdf6a63bc4c3da8
+PODFILE CHECKSUM: e360a99aaf9457848de7ba7b3e26a93fa2f0af3b
 
 COCOAPODS: 1.10.0
