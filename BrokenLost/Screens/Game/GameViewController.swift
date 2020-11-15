@@ -58,10 +58,7 @@ class GameViewController: UIViewController {
     }
     
     private func startGame() {
-        timer?.invalidate()
         timer = setupTimer()
-        
-        
         counter = .zero
         
         let bounds = view.frame
