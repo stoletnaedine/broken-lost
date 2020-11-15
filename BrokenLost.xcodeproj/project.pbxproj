@@ -13,6 +13,7 @@
 		C3A6F0D925614C6200D27BA6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6F0D825614C6200D27BA6 /* Fonts.swift */; };
 		C3A6F0E125614E4400D27BA6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6F0DF25614E4400D27BA6 /* MenuViewController.swift */; };
 		C3A6F0E225614E4400D27BA6 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A6F0E025614E4400D27BA6 /* MenuViewController.xib */; };
+		C3A6F0EA2561554F00D27BA6 /* BallType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6F0E92561554F00D27BA6 /* BallType.swift */; };
 		C3FB273325611F0B00D8611E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB273225611F0B00D8611E /* AppDelegate.swift */; };
 		C3FB273725611F0B00D8611E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB273625611F0B00D8611E /* GameViewController.swift */; };
 		C3FB273C25611F0C00D8611E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FB273B25611F0C00D8611E /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		C3A6F0D825614C6200D27BA6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		C3A6F0DF25614E4400D27BA6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C3A6F0E025614E4400D27BA6 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		C3A6F0E92561554F00D27BA6 /* BallType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallType.swift; sourceTree = "<group>"; };
 		C3FB272F25611F0B00D8611E /* BrokenLost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrokenLost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FB273225611F0B00D8611E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3FB273625611F0B00D8611E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
+		C3A6F0E82561553D00D27BA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A6F0E92561554F00D27BA6 /* BallType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C3FB272625611F0B00D8611E = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 				C3FB273225611F0B00D8611E /* AppDelegate.swift */,
 				C3FB274B2561206D00D8611E /* RootManager.swift */,
 				C3FB274825611FE000D8611E /* Screens */,
+				C3A6F0E82561553D00D27BA6 /* Models */,
 				C37C609925612659009A93EA /* Resources */,
 			);
 			path = BrokenLost;
@@ -276,6 +287,7 @@
 				C3FB273325611F0B00D8611E /* AppDelegate.swift in Sources */,
 				C3FB274C2561206D00D8611E /* RootManager.swift in Sources */,
 				C37C620B25613595009A93EA /* R.generated.swift in Sources */,
+				C3A6F0EA2561554F00D27BA6 /* BallType.swift in Sources */,
 				C3A6F0E125614E4400D27BA6 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
