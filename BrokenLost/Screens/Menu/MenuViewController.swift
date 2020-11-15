@@ -36,7 +36,10 @@ class MenuViewController: UIViewController {
     
     @objc
     private func trainingButtonDidTap() {
-        print(#function)
+        let alert = UIAlertController(title: nil, message: R.string.localizable.rules(), preferredStyle: .alert)
+        let okAction = UIAlertAction(title: R.string.localizable.rulesOk(), style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
     
     @objc

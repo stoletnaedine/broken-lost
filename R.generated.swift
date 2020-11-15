@@ -127,12 +127,16 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
     struct localizable {
       /// Value: Играть
       static let menuGame = Rswift.StringResource(key: "Menu.game", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Пройти обучение
+      /// Value: Понял
+      static let rulesOk = Rswift.StringResource(key: "Rules.ok", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Правила
       static let menuTraining = Rswift.StringResource(key: "Menu.training", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Правила простые. Красные шары нужно "ломать" одиночным тапом, синие нужно "терять" свайпом вверх. Если делать наоборот - игра заканчивается.
+      static let rules = Rswift.StringResource(key: "Rules", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: Играть
       static func menuGame(preferredLanguages: [String]? = nil) -> String {
@@ -147,7 +151,20 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Menu.game", bundle: bundle, comment: "")
       }
 
-      /// Value: Пройти обучение
+      /// Value: Понял
+      static func rulesOk(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Rules.ok", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "Rules.ok"
+        }
+
+        return NSLocalizedString("Rules.ok", bundle: bundle, comment: "")
+      }
+
+      /// Value: Правила
       static func menuTraining(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("Menu.training", bundle: hostingBundle, comment: "")
@@ -158,6 +175,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("Menu.training", bundle: bundle, comment: "")
+      }
+
+      /// Value: Правила простые. Красные шары нужно "ломать" одиночным тапом, синие нужно "терять" свайпом вверх. Если делать наоборот - игра заканчивается.
+      static func rules(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Rules", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "Rules"
+        }
+
+        return NSLocalizedString("Rules", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
