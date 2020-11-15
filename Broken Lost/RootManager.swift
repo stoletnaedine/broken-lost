@@ -6,12 +6,11 @@
 //
 
 import UIKit
+import Reachability
 
 class RootManager {
     
     var window: UIWindow?
-//    let connectionHelper = ConnectionHelper()
-//    let alertService: AlertService = AlertServiceDefault()
     
     func start() {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -24,6 +23,14 @@ class RootManager {
     private func startGame() {
         let gameVC = GameViewController()
         window?.rootViewController = gameVC
+    }
+    
+    private func connectionAvailable() -> Bool {
+        let reachability = try! Reachability()
+        if reachability.connection == .unavailable {
+//            alertService.showErrorMessage(desc: R.string.localizable.errorNoInternet())
+        }
+        return reachability.connection != .unavailable
     }
     
 }

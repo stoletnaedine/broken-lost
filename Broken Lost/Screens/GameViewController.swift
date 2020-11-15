@@ -13,6 +13,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         print("start game")
+        
     }
 
 
