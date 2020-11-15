@@ -17,12 +17,12 @@ class RootManager {
         window?.makeKeyAndVisible()
 //        window?.rootViewController = R.storyboard.launchScreen().instantiateInitialViewController()
         
-        startGame()
+        showMenu()
     }
     
-    private func startGame() {
-        let gameVC = GameViewController()
-        window?.rootViewController = gameVC
+    private func showMenu() {
+        let menuVC = MenuViewController()
+        window?.rootViewController = menuVC
     }
     
     private func connectionAvailable() -> Bool {

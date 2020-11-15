@@ -105,24 +105,59 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `MenuViewController`.
+    static let menuViewController = _R.nib._MenuViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MenuViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.menuViewController) instead")
+    static func menuViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.menuViewController)
+    }
+    #endif
+
+    static func menuViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.menuViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
     struct localizable {
-      /// Value: Тестовое
-      static let test = Rswift.StringResource(key: "test", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Играть
+      static let menuGame = Rswift.StringResource(key: "Menu.game", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Пройти обучение
+      static let menuTraining = Rswift.StringResource(key: "Menu.training", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
-      /// Value: Тестовое
-      static func test(preferredLanguages: [String]? = nil) -> String {
+      /// Value: Играть
+      static func menuGame(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("test", bundle: hostingBundle, comment: "")
+          return NSLocalizedString("Menu.game", bundle: hostingBundle, comment: "")
         }
 
         guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "test"
+          return "Menu.game"
         }
 
-        return NSLocalizedString("test", bundle: bundle, comment: "")
+        return NSLocalizedString("Menu.game", bundle: bundle, comment: "")
+      }
+
+      /// Value: Пройти обучение
+      static func menuTraining(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Menu.training", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "Menu.training"
+        }
+
+        return NSLocalizedString("Menu.training", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
@@ -150,6 +185,23 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _MenuViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "MenuViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {

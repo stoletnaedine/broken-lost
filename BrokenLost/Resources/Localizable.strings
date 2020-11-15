@@ -6,4 +6,7 @@
   
 */
 
-"test" = "Тестовое";
+// MARK: — Menu
+
+"Menu.training" = "Пройти обучение";
+"Menu.game" = "Играть";
