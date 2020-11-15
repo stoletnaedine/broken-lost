@@ -19,10 +19,12 @@
 		C3FB273C25611F0C00D8611E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FB273B25611F0C00D8611E /* Assets.xcassets */; };
 		C3FB273F25611F0C00D8611E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FB273D25611F0C00D8611E /* LaunchScreen.storyboard */; };
 		C3FB274C2561206D00D8611E /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB274B2561206D00D8611E /* RootManager.swift */; };
+		E449C295BCF5018D9B3E05A9 /* Pods_BrokenLost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B036CCD245573CD489BFC84E /* Pods_BrokenLost.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E0063DC099420125C9C0F5C /* Pods-BrokenLost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenLost.debug.xcconfig"; path = "Target Support Files/Pods-BrokenLost/Pods-BrokenLost.debug.xcconfig"; sourceTree = "<group>"; };
+		B036CCD245573CD489BFC84E /* Pods_BrokenLost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrokenLost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37C609E25612712009A93EA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C37C620A25613595009A93EA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		C3A6F0D525614BA500D27BA6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E449C295BCF5018D9B3E05A9 /* Pods_BrokenLost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +57,7 @@
 		0741B2A1317F0845AE2EA035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B036CCD245573CD489BFC84E /* Pods_BrokenLost.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,7 +233,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

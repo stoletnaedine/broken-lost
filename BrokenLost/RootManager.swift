@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Reachability
 
 class RootManager {
     
@@ -23,14 +22,6 @@ class RootManager {
     private func showMenu() {
         let menuVC = MenuViewController()
         window?.rootViewController = menuVC
-    }
-    
-    private func connectionAvailable() -> Bool {
-        let reachability = try! Reachability()
-        if reachability.connection == .unavailable {
-//            alertService.showErrorMessage(desc: R.string.localizable.errorNoInternet())
-        }
-        return reachability.connection != .unavailable
     }
     
 }
