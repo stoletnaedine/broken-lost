@@ -46,7 +46,7 @@ class GameViewController: UIViewController {
     private func updateTimerLabel() {
         var currentSeconds = Int(timerLabel.text ?? "0") ?? .zero
         guard currentSeconds > 0 else {
-            showResult()
+            endGame()
             return
         }
         currentSeconds -= 1
@@ -100,7 +100,7 @@ class GameViewController: UIViewController {
             let tap = UITapGestureRecognizer(target: self, action: #selector(brokeBall(_:)))
             view.addGestureRecognizer(tap)
             
-            let errorSwipe = UISwipeGestureRecognizer(target: self, action: #selector(errorBroke(_:)))
+            let errorSwipe = UISwipeGestureRecognizer(target: self, action: #selector(endGame))
             errorSwipe.direction = .up
             view.addGestureRecognizer(errorSwipe)
         case .lost:
@@ -108,7 +108,7 @@ class GameViewController: UIViewController {
             swipe.direction = .up
             view.addGestureRecognizer(swipe)
             
-            let errorTap = UITapGestureRecognizer(target: self, action: #selector(errorLost(_:)))
+            let errorTap = UITapGestureRecognizer(target: self, action: #selector(endGame))
             view.addGestureRecognizer(errorTap)
         }
     }
@@ -142,19 +142,10 @@ class GameViewController: UIViewController {
     }
     
     @objc
-    private func errorBroke(_ gesture: UISwipeGestureRecognizer) {
-        showResult()
-    }
-    
-    @objc
-    private func errorLost(_ gesture: UITapGestureRecognizer) {
-        showResult()
-    }
-    
-    private func showResult() {
+    private func endGame() {
         timer?.invalidate()
         
-        // TODO: localize
+        // TODO: вынести в localize
         let alert = UIAlertController(title: "Игра окончена!",
                                       message: "Ваш счет: \(counter)",
                                       preferredStyle: .alert)
